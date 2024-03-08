@@ -4,7 +4,7 @@ import { Typography } from "antd";
 const { Title } = Typography;
 export default function Sidebar() {
   return (
-    <div className="w-full max-w-[20rem] p-6 border-r-2 border-gray hidden md:block font-medium">
+    <div className="w-3/12 p-4 border-r-2 border-gray hidden md:block font-medium bg-background sticky top-16 left-0 h-fit">
       <div className="sidebar">
         <SettingFilled spin="true" />
         <Title level={4}>Home</Title>
