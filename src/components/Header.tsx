@@ -6,7 +6,7 @@ const BurgerMenu = lazy(() => import("./BurgerMenu"));
 // const { Text } = Typography;
 export default function Header() {
   return (
-    <header className="bg-white sticky top-0 z-10">
+    <header className="bg-white sticky top-0 z-10 shadow">
       <nav className="mx-auto flex max-w-9xl items-center justify-between p-4 px-6">
         <div className="block md:hidden">
           <BurgerMenu />

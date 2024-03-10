@@ -1,10 +1,10 @@
-import { lazy } from "react";
+import { ReactNode, lazy } from "react";
 const Sidebar = lazy(() => import("./components/Sidebar"));
 const Header = lazy(() => import("./components/Header"));
 
-const Layout = ({ children }) => {
+const Layout = ({ children }:ReactNode) => {
   return (
-    <main className="flex flex-col min-h-screen bg-background font-display">
+    <main className="flex flex-col min-h-screen font-display">
       <Header />
       <div className="flex">
         <Sidebar />

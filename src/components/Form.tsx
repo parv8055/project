@@ -39,7 +39,7 @@ export default function FormComp() {
         </Title>
       </div>
 
-      <div className="bg-white p-4 sm:p-8 md:p-12 rounded-xl">
+      <div className="bg-white p-4 sm:p-8 md:p-12 rounded-xl shadow-xl">
         <Form layout="vertical">
           <div className="md:flex md:space-x-4">
             <div className="w-full md:w-6/12">
