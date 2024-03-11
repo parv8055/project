@@ -1,10 +1,10 @@
 import { lazy } from "react";
-const Form = lazy(() => import("./components/Form"));
+const HomeForm = lazy(() => import("./components/HomeForm"));
 const Layout = lazy(() => import("./Layout"));
 const App = () => {
   return (
     <Layout>
-      <Form />
+      <HomeForm />
     </Layout>
   );
 };
