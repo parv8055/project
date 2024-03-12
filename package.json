@@ -11,12 +11,17 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.1",
+    "@web3-react/core": "^8.2.3",
+    "@web3-react/types": "^8.2.3",
     "antd": "^5.15.1",
     "clsx": "^2.1.0",
+    "eventemitter3": "^5.0.1",
     "framer-motion": "^11.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.2.1"
+    "react-hook-form": "^7.51.0",
+    "tailwind-merge": "^2.2.1",
+    "web3-react-phantom": "^1.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",

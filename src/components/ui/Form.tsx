@@ -25,21 +25,21 @@ export function FormInput({ label, placeholder }: formType) {
 }
 export function FormSwitch({ label }: formType) {
   return (
-    <Form.Item className="font-medium" label={label} valuePropName="checked">
+    <Form.Item label={label} valuePropName="checked">
       <Switch />
     </Form.Item>
   );
 }
 export function FormTextArea({ label, placeholder }: formType) {
   return (
-    <Form.Item className="font-medium" label={label}>
+    <Form.Item label={label}>
       <TextArea className="p-2" rows={5} placeholder={placeholder} />
     </Form.Item>
   );
 }
 export function FormUpload({ label, props }: formType) {
   return (
-    <Form.Item className="font-medium" label={label}>
+    <Form.Item label={label}>
       <Dragger {...props}>
         <p className="ant-upload-drag-icon">
           <InboxOutlined />

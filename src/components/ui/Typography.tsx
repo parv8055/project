@@ -21,14 +21,12 @@ export function Heading3({ children }: textType) {
 export function Heading4({ children }: textType) {
   return <h1 className="text-2xl font-bold">{children}</h1>;
 }
-export function Heading5({ children }: textType) {
-  return <h1 className="text-xl font-bold">{children}</h1>;
+export function Heading5({ children,className }: textType) {
+  return <h1 className={`text-xl ${className}`}>{children}</h1>;
 }
-export function Heading6({ children }: textType) {
-  return <h1 className="text-lg font-bold">{children}</h1>;
+export function Heading6({ children, className }: textType) {
+  return <h1 className={`text-lg ${className}`}>{children}</h1>;
 }
 export function Text({ children, className }: textType) {
-  return (
-    <span className={`text-lg text-gray-200 ${className}`}>{children}</span>
-  );
+  return <span className={`text-base ${className}`}>{children}</span>;
 }

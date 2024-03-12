@@ -1,4 +1,4 @@
-import { Heading5, Text } from "./ui/Typography";
+import { Heading5, Heading6 } from "./ui/Typography";
 import ButtonCustom from "./ui/Button";
 import { useState } from "react";
 import { Drawer } from "antd";
@@ -6,23 +6,23 @@ import { Drawer } from "antd";
 export function SidebarContent() {
   return (
     <>
-      <ButtonCustom type="text" className="w-full p-6">
-        <Text>Home</Text>
-      </ButtonCustom>
+      <div className="p-4 hover:bg-gray-100 rounded-xl hover:cursor-pointer text-center">
+        <Heading6 className="text-gray-200">Home</Heading6>
+      </div>
       <div>
         <Heading5>Token</Heading5>
         {[...Array(4)].map((i) => (
-          <ButtonCustom type="text" className="w-full p-6" key={i}>
-            <Text>Token Creator</Text>
-          </ButtonCustom>
+          <div className="p-4 hover:bg-gray-100 rounded-xl hover:cursor-pointer text-center">
+            <Heading6 className="text-gray-200">Token Creator</Heading6>
+          </div>
         ))}
       </div>
       <div>
         <Heading5>NFT</Heading5>
         {[...Array(3)].map((i) => (
-          <ButtonCustom type="text" className="w-full p-6" key={i}>
-            <Text>Creator</Text>
-          </ButtonCustom>
+          <div className="p-4 hover:bg-gray-100 rounded-xl hover:cursor-pointer text-center">
+            <Heading6 className="text-gray-200">Creator</Heading6>
+          </div>
         ))}
       </div>
     </>
@@ -31,7 +31,7 @@ export function SidebarContent() {
 
 export function Sidebar() {
   return (
-    <div className="w-2/12 p-4 border-r-2 border-gray-100 space-y-8 hidden md:block sticky top-16 left-0 h-screen">
+    <div className="w-2/12 p-4 border-r-2 border-gray-100 space-y-8 hidden md:block sticky top-16 left-0 h-fit">
       <SidebarContent />
     </div>
   );
